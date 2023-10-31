@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>News App</title>
+</head>
+<body>
+    <nav>
+        <div  class="div1 container">
+            <a href="#" onclick="reload()">Login </a>
+            <a href="#" onclick="reload()">Contact </a>
+            <a href="#" onclick="reload()">About</a><br><br>
+            <a href="https://www.facebook.com/" target="_blank" class="start"><img src="image/facebook.png" class="img2" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="start"><img src="image/instagram.png"  class="img2"  alt="instagram"></a>
+            <a href="https://www.whatsapp.com/" target="_blank" class="start"><img src="image/whatapp.png"  class="img2"  alt="whatapp"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="start"><img src="image/youtube.png"  class="img2"  alt="whatapp"></a>
+        </div>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()">
+                <img src="image/a.png"  class="img1" alt="logo">
+            </a>
+            <div class="nav-link">
+                <ul class="flex">
+                <li class="hover-link nav-item" id="Business" onclick="onNavItemClick('Business')" >Business</li>
+                <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')" >IPL</li>
+                <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+                <li class="hover-link nav-item" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" class="news-input" placeholder="eg. sports">
+                <button class="search-button" id="button1">Seach</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="contain container flex" id="collect">
+           
+        </div>
+    </main>
+    <template id="template-news">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">                
+            </div>
+            <div class="card-content">
+                <h3 id="h3">Title</h3>
+                <p id="p1" class="news-desciption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere similique ipsum perferendis pariatur sequi ullam dolorum quod vero commodi ut, nihil itaque exercitationem autem nostrum, assumenda provident animi numquam quia.</p>
+                <h6 class="h6" id="h6">Welcome 29/10/2023</h6>
+            </div>
+        </div>
+    </template>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    
+}
+.nav-link {
+    color: navy;
+}
+.search-button {background-color: navy; font-family: sans-serif; color: white;  border-radius: 10%; padding: 8px 24px; border: none; cursor: pointer;}
+a {text-decoration: none;}
+ul {list-style: none;}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav {
+    background-color: whitesmoke;
+    box-shadow: 0 0 4px lightblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.img1{width: 125px; border-radius: 30%;}
+.nav-link ul{gap: 16px;}
+.hover-link {
+    cursor: pointer;
+} 
+.hover-link:hover {
+    color: green;
+}
+.div:hover {
+    color: green;
+}
+.hover-link:active {
+    color: red;
+}
+.nav-item.active {
+    color: orange;
+    font-style: italic;
+}
+.clor {
+    background-color: grey;
+}
+.first {
+    background-color: gainsboro;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.news-input {
+    width: 200px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 5px;
+    border: 2px solid lightblue;
+    font-family: sans-serif;
+}
+.search-button:hover {
+    background-color: lightskyblue;
+    color: navy;
+}
+main {
+    padding-block: 20px;
+    margin-top: 15%
+}
+.contain {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+.card {
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0px 0px 4px lightblue;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: whitesmoke;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    box-shadow: 1px 1px 8px lightblue;
+    background-color: aliceblue;
+    transform: translateY(-2px);
+}
+.start img:hover {
+    transform: scale(1.7);    
+}
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 12px;
+}
+.h6 {
+    margin-block: 12px;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+        padding: auto;
+        margin: auto;
+    }
+    .nav-link ul {
+        gap: 8px; 
+    }
+    
+}
+.div1{
+    background-color: aquamarine;
+    text-align: right;
+    font-size: 16px;
+    gap: 5px;
+    padding: 10px;
+    background: rgb(133,3,3);
+background: linear-gradient(90deg, rgba(133,3,3,1) 33%, rgba(241,6,6,0.46271008403361347) 58%, rgba(236,134,134,0.768032212885154) 100%);
+border-radius: 20%;
+font-style: italic;
+font-weight: bold;
+}
+.img2 {
+    width: 27px;
+}
